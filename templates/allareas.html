@@ -1,0 +1,21 @@
+<div>
+	<table class="table">
+	  <h1 style="color: yellow;"><b>AREA DETAILS</b></h1>
+	  <div align="right">
+	  	<button class="btn btn-success" ui-sref="app.create()" style="margin-right: 10%">New &nbsp;<span class="glyphicon glyphicon-plus"></span></button>
+	  </div>
+	  <br/>
+		<tr>
+			<th><h3>Title</h3></th>
+			<th><h3>Description</h3></th>
+			<th colspan="2"><h3 align="center">Actions</h3></th>
+		</tr>
+	 <tbody>
+	 	<tr ng-repeat="area in areas">
+	 	<td>{{area.title}}</td>
+	 	<td>{{area.description}}</td>
+	 	<td><button class="btn btn-success" ui-sref="app.edit({id: area.id})">Update</button></td>
+	 	<td><button class="btn btn-success" ng-click="delete(area)">Delete</button></td>
+	 </tbody>
+	</table>
+</div>

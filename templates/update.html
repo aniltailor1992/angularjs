@@ -1,0 +1,23 @@
+<form style="margin-left: 30%; margin-right: 30%">
+  <button class="btn btn-primary" ui-sref="/">Back</button>
+  <h1>Update Area</h1>
+	<br/>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput">Id</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" ng-model="area.id" placeholder="Id  input">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput2">Title</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" ng-model="area.title" placeholder="Title input">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput2">Description</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" ng-model="area.description" placeholder="Description input">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput2">Image</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" ng-model="area.image" placeholder="Image input">
+  </fieldset>
+  <br/>
+  <button class="btn btn-primary" ui-sref="/" ng-click="save(2)">Save</button>
+</form>
